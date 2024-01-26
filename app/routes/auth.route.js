@@ -5,7 +5,9 @@ module.exports = app => {
     //router.post("/register",auth, user.login);
     router.post("/login", user.login);
     //router.get("/me", user.getUser); 
-    router.post("/register", user.register);
+    if (process.env.SIGNUPS === 'on') {
+      router.post("/register", user.register);
+    }
     router.post("/otp-verify", user.otpVerify);
     router.post("/get-signup", user.getSignUpOption);
     router.post("/get-version", user.getVersionOption);
