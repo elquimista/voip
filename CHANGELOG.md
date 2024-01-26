@@ -3,6 +3,10 @@
 > Note: Every update deletes the MMS media files and folder which is stored locally in your ephemeral cloud hosted service and not stored in the database.
 
 ---
+## v0.95 (Jan 26, 2024)
+### Security
+- disabled register api if SIGNUPS is not set to `on` (signup route is still available on frontend).
+
 ## v0.94 (Jul 24, 2023)
 ### Feature
 - added autocomplete/search in dropdown under `Profile Settings` > `Get Number` to search through a long list of numbers
